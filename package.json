@@ -1,0 +1,45 @@
+{
+  "name": "mirgrating-away-from-momentjs",
+  "version": "0.0.0",
+  "description": "A test suite for validating a replacement library for momentjs",
+  "main": "index.js",
+  "scripts": {
+    "build-dayjs": "node ./build-test.js dayjs",
+    "build-moment": "node ./build-test.js moment",
+    "build-luxon": "node ./build-test.js luxon",
+    "test": "jest",
+    "test-dayjs": "npm-run-all --serial build-dayjs test",
+    "test-moment": "npm-run-all --serial build-moment test",
+    "test-luxon": "npm-run-all --serial build-luxon test-luxon-with-full-icu",
+    "test-luxon-with-full-icu": "NODE_ICU_DATA=\"$(pwd)/node_modules/full-icu\" jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terodox/mirgrating-away-from-momentjs.git"
+  },
+  "keywords": [
+    "momentjs",
+    "moment",
+    "miggrate",
+    "upgrade",
+    "test",
+    "test-suite"
+  ],
+  "author": "Andy Desmarais <terodox@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terodox/mirgrating-away-from-momentjs/issues"
+  },
+  "homepage": "https://github.com/terodox/mirgrating-away-from-momentjs#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "7.10.4",
+    "@babel/preset-env": "7.11.5",
+    "dayjs": "1.9.1",
+    "full-icu": "1.3.1",
+    "jest": "26.5.2",
+    "luxon": "1.25.0",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.31",
+    "npm-run-all": "4.1.5"
+  }
+}
