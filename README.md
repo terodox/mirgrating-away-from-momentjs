@@ -1,5 +1,6 @@
 # mirgrating-away-from-momentjs
-A set of test suites to prove different library compatibilities with momentjs.
+
+A set of test suites to prove different library compatibilities with momentjs. Please feel free to contribute your own test suite for a given library!
 
 ## Quick note
 
