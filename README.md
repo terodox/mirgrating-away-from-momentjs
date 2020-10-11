@@ -40,3 +40,13 @@ KEY:
   - ✅ PASS - Finnish translation - Different strings
   - ✅ PASS - Norwegian translation - Different strings
   - ✅ PASS - Portuguese translation - Different strings
+
+## Adding your own tests
+
+Steps:
+1. Add file with the name of the library you want to test
+1. Implement all function exported from [moment.js](moment.js) file
+1. Add a build line for new file (copy existing replace last parameter)
+1. Add a test line for new file (copy existing and replace build name)
+
+Then run them and tweak until you can be sure the failures are real, and not a [PEBCAK](https://en.wiktionary.org/wiki/PEBCAK) issue 😊
