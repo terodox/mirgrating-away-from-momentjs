@@ -14,6 +14,7 @@ Then you can pick one of the other options:
 
 - `npm run test-luxon`
 - `npm run test-dayjs`
+- `npm run test-date-fns`
 
 Each of these tests WILL have failures. Known failures:
 
@@ -41,6 +42,16 @@ KEY:
   - ✅ PASS - Finnish translation - Different strings
   - ✅ PASS - Norwegian translation - Different strings
   - ✅ PASS - Portuguese translation - Different strings
+- date-fns
+  - ✅ PASS - German translation - Different strings
+  - ✅ PASS - Spanish translation - Different strings
+  - ✅ PASS - Danish translation - Different strings
+  - ✅ PASS - Dutch translation - Different strings
+  - ✅ PASS - Finnish translation - Different strings
+  - ✅ PASS - Norwegian translation - Different strings
+  - ✅ PASS - Portuguese translation - Different strings
+  - ✅ PASS - Swedish translation - Different strings
+
 
 ## Adding your own tests
 
