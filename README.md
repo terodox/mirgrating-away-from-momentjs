@@ -14,6 +14,7 @@ Then you can pick one of the other options:
 
 - `npm run test-luxon`
 - `npm run test-dayjs`
+- `npm run test-date-fns`
 
 Each of these tests WILL have failures. Known failures:
 
